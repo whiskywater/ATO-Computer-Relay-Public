@@ -18,7 +18,7 @@ ChatGPT-compatible remote MCP client
  filesystem process sessions system info
 ```
 
-See [docs/architecture.md](docs/architecture.md) and [docs/protocol.md](docs/protocol.md) for the trust model and wire contract.
+See [connectivity and tunnels](docs/connectivity-and-tunnels.md) for a generic Cloudflare Tunnel deployment path, and [architecture](docs/architecture.md) and [protocol](docs/protocol.md) for the trust model and wire contract.
 
 ## Security model
 
