@@ -1,0 +1,39 @@
+{
+  "relay_url": "wss://mcp.example.net/agent/ws",
+  "device_id": "example-device",
+  "device_name": "Example workstation",
+  "private_key_file": "data/device.key",
+  "log_file": "logs/agent.jsonl",
+  "policy": {
+    "allowed_roots": [
+      "C:\\ATO\\workspace"
+    ],
+    "denied_paths": [
+      "C:\\Windows",
+      "C:\\Program Files\\Windows Defender"
+    ],
+    "allowed_tools": [
+      "system.info",
+      "fs.list",
+      "fs.read",
+      "fs.stat"
+    ],
+    "allowed_commands": [
+      "C:\\ATO\\bin\\approved-tool.exe"
+    ],
+    "denied_commands": [
+      "Format-Volume",
+      "Clear-Disk",
+      "cipher /w"
+    ],
+    "denied_process_names": [
+      "ATOComputerAgent.exe"
+    ],
+    "max_command_runtime": 600000000000,
+    "max_session_runtime": 43200000000000,
+    "session_supervisor_enabled": false,
+    "session_journal_dir": "",
+    "max_session_journal_bytes": 33554432,
+    "max_output_bytes": 262144
+  }
+}

@@ -1,0 +1,7 @@
+mcp.example.net {
+	@health path /healthz /readyz
+	reverse_proxy @health 127.0.0.1:8443
+	reverse_proxy 127.0.0.1:8443 {
+		# Caddy supports WebSocket upgrades automatically.
+	}
+}

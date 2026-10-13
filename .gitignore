@@ -1,0 +1,25 @@
+/bin/
+/data/
+*.log
+*.key
+*.pem
+*.exe
+*.test
+coverage.out
+.env
+config.local.json
+
+# Local secrets, service configs and runtime evidence
+**/agent.json
+**/relay.json
+*.env
+.env.*
+*.p12
+*.pfx
+*.jsonl
+*.sqlite
+*.db
+logs/
+journal/
+*.token
+*.secret
