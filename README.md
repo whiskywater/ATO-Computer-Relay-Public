@@ -166,3 +166,7 @@ go vet ./...
 The live registry, registrations and request routing state are in memory/static config. Multiple relay replicas need shared device ownership and revocation state. OAuth/OIDC issuance and refresh are not included. Audit logs are structured but not tamper-evident or stored in a separate append-only database. Filesystem checks are application checks and have normal time-of-check/time-of-use exposure; NTFS ACLs and an unprivileged service account remain essential. A shell-capable compromised relay can run commands allowed to the service account. GUI input, screenshots, clipboard and desktop-session interaction are not part of this MVP. The relay has no public hostname or production TLS deployment in this repository state.
 
 This public source snapshot contains no private production configuration or historical operational commits. Do not assume the source has completed an independent security certification.
+
+## License and ownership
+
+Copyright (c) 2026 whiskywater. Released under the permissive MIT License. Contributors and downstream users must retain the copyright notice and license in copies or substantial portions; the original copyright remains with its holder. See [LICENSE](LICENSE).
